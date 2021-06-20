@@ -1,0 +1,58 @@
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="./style.css">
+   <script src="./script.js" defer></script>
+   <title>Document</title>
+</head>
+<body>
+   <div class="end-transition" id='lottie-file'>
+      <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+      <lottie-player src="https://assets7.lottiefiles.com/packages/lf20_LL5C7n.json"  background="transparent"  speed="1"  style="width: 300px; height: 300px;"  loop  autoplay></lottie-player>
+    </div>
+    <audio src="./melody_ending.mp3" id='audio'></audio>
+   <h1 id='heading'>Event name...</h1>
+   <div class="input-container">
+      <div class="text-date">
+         <input type="text" id='event-name' placeholder="Enter eventname....">
+         <input type="datetime-local" id='datetime-local'>
+      </div>
+      <div>
+         <button onclick="startTimer()">Start</button>
+         <button onclick="resetTimer()">Reset</button>
+      </div>
+   </div>
+   <div class="timer-body-container">
+      <div>
+      </div>
+      <div class="timer-show-container" id='timer-show-container'>
+         <div class="timer">
+            <div>
+               <p class="timer-show" id='days'>0</p>
+            </div>
+            <span>Days</span>
+         </div>
+         <div class="timer">
+            <div>
+               <p class="timer-show" id='hours'>0</p>
+            </div>
+            <span>Hours</span>
+         </div>
+         <div class="timer">
+            <div>
+               <p class="timer-show" id="minutes">0</p>
+            </div>
+            <span>Minutes</span>
+         </div>
+         <div class="timer">
+            <div>
+               <p class="timer-show" id='seconds'>0</p>
+            </div>
+            <span>Seconds</span>
+         </div>
+      </div>
+   </div>
+</body>
+</html>
