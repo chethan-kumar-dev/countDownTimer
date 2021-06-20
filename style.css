@@ -39,7 +39,7 @@ input{
    display: flex;
    gap: 10px;
 }
-@media only screen and (max-width:390px){
+@media only screen and (max-width:400px){
    .text-date{
       display: flex;
       flex-direction: column;
